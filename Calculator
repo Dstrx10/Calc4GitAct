@@ -1,0 +1,46 @@
+
+
+"Addition"
+def Add(a, b): 
+    return a + b
+
+"Subtraction"
+def Subtract(a, b):
+    return a - b
+
+"Multiplication"
+def Multiply(a, b):
+    return a * b
+
+"Division"
+def Divide(a, b):
+    if b == 0:
+        raise ZeroDivisionError("Cannot divide by zero")
+    return a / b
+
+"Exponent"
+def Exponent(a, b):
+    return a ** b
+
+"Calculator Code"
+def Calculator():
+    print("Enter you first number: ")
+    input1 = int(input())
+    print("Enter yor operation: ")
+    operation = input()
+    print("Enter your second number: ")
+    input2 = int(input())
+    if operation == "+":
+        print("The answer is: " + Add(input1, input2))
+    elif operation == "-":
+        print("The answer is: " + Subtract(input1, input2))
+    elif operation == "*":
+        print("The answer is: " + Multiply(input1, input2))
+    elif operation == "/":
+        print("The answer is: " + Divide(input1, input2))
+    elif operation == "**":
+        print("The answer is: " + Exponent(input1, input2))
+    else:
+        print("Invalid operation")
+
+Calculator()
