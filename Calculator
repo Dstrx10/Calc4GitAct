@@ -31,16 +31,16 @@ def Calculator():
     print("Enter your second number: ")
     input2 = int(input())
     if operation == "+":
-        print("The answer is: " + Add(input1, input2))
+        print("The answer is: " + Add(input1, input2)) #Addition
     elif operation == "-":
-        print("The answer is: " + Subtract(input1, input2))
+        print("The answer is: " + Subtract(input1, input2)) #Subtraction
     elif operation == "*":
-        print("The answer is: " + Multiply(input1, input2))
+        print("The answer is: " + Multiply(input1, input2)) #Multiplication
     elif operation == "/":
-        print("The answer is: " + Divide(input1, input2))
-    elif operation == "**":
-        print("The answer is: " + Exponent(input1, input2))
+        print("The answer is: " + Divide(input1, input2)) #Division
+    elif operation == "**": 
+        print("The answer is: " + Exponent(input1, input2)) #Exponent
     else:
-        print("Invalid operation")
+        print("Invalid operation") #Error message
 
-Calculator()
+Calculator() #Call the function
